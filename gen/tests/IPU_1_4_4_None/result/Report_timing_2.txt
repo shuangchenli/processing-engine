@@ -1,0 +1,52 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : IPU
+Version: M-2016.12-SP5-4
+Date   : Wed Aug 15 10:20:29 2018
+****************************************
+
+Operating Conditions: typical   Library: gscl45nm
+Wire Load Model Mode: segmented
+
+  Startpoint: io_actvtnIn_0[1]
+              (input port)
+  Endpoint: io_out_innerProd[3]
+            (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  IPU                5K_hvratio_1_1        gscl45nm
+  IPUPMult           5K_hvratio_1_1        gscl45nm
+  IPUSumTree         5K_hvratio_1_1        gscl45nm
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  input external delay                                    0.00       0.00 f
+  io_actvtnIn_0[1] (in)                                   0.01       0.01 f
+  IPUPMult/io_actvtnVec_0[1] (IPUPMult)                   0.00       0.01 f
+  IPUPMult/U7/Y (AND2X1)                                  0.05       0.06 f
+  IPUPMult/U25/Y (NAND3X1)                                0.03       0.09 r
+  IPUPMult/U21/Y (BUFX2)                                  0.05       0.14 r
+  IPUPMult/U26/Y (INVX1)                                  0.02       0.16 f
+  IPUPMult/U27/Y (AOI21X1)                                0.02       0.18 r
+  IPUPMult/U9/Y (BUFX2)                                   0.05       0.23 r
+  IPUPMult/U28/YC (FAX1)                                  0.08       0.31 r
+  IPUPMult/U29/YS (FAX1)                                  0.11       0.42 r
+  IPUPMult/U31/YS (FAX1)                                  0.09       0.51 f
+  IPUPMult/io_pairwiseProd_0[3] (IPUPMult)                0.00       0.51 f
+  IPUSumTree/io_inVec_0[3] (IPUSumTree)                   0.00       0.51 f
+  IPUSumTree/U1/Y (BUFX2)                                 0.03       0.55 f
+  IPUSumTree/io_sum[3] (IPUSumTree)                       0.00       0.55 f
+  io_out_innerProd[3] (out)                               0.00       0.55 f
+  data arrival time                                                  0.55
+  --------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+1

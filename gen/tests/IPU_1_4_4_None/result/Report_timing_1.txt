@@ -1,0 +1,107 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay min
+        -max_paths 3
+        -sort_by group
+Design : IPU
+Version: M-2016.12-SP5-4
+Date   : Wed Aug 15 10:20:29 2018
+****************************************
+
+Operating Conditions: typical   Library: gscl45nm
+Wire Load Model Mode: segmented
+
+  Startpoint: io_weightIn_0[0]
+              (input port)
+  Endpoint: io_out_innerProd[0]
+            (output port)
+  Path Group: (none)
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  IPU                5K_hvratio_1_1        gscl45nm
+  IPUPMult           5K_hvratio_1_1        gscl45nm
+  IPUSumTree         5K_hvratio_1_1        gscl45nm
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  input external delay                                    0.00       0.00 f
+  io_weightIn_0[0] (in)                                   0.01       0.01 f
+  IPUPMult/io_weightVec_0[0] (IPUPMult)                   0.00       0.01 f
+  IPUPMult/U23/Y (AND2X1)                                 0.04       0.05 f
+  IPUPMult/io_pairwiseProd_0[0] (IPUPMult)                0.00       0.05 f
+  IPUSumTree/io_inVec_0[0] (IPUSumTree)                   0.00       0.05 f
+  IPUSumTree/U4/Y (BUFX2)                                 0.03       0.08 f
+  IPUSumTree/io_sum[0] (IPUSumTree)                       0.00       0.08 f
+  io_out_innerProd[0] (out)                               0.00       0.08 f
+  data arrival time                                                  0.08
+  --------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: io_weightIn_0[1]
+              (input port)
+  Endpoint: io_out_innerProd[1]
+            (output port)
+  Path Group: (none)
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  IPU                5K_hvratio_1_1        gscl45nm
+  IPUPMult           5K_hvratio_1_1        gscl45nm
+  IPUSumTree         5K_hvratio_1_1        gscl45nm
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  input external delay                                    0.00       0.00 f
+  io_weightIn_0[1] (in)                                   0.01       0.01 f
+  IPUPMult/io_weightVec_0[1] (IPUPMult)                   0.00       0.01 f
+  IPUPMult/U11/Y (AND2X1)                                 0.03       0.04 f
+  IPUPMult/U10/Y (INVX1)                                  0.01       0.05 r
+  IPUPMult/U22/Y (AOI21X1)                                0.01       0.06 f
+  IPUPMult/U2/Y (BUFX2)                                   0.03       0.10 f
+  IPUPMult/io_pairwiseProd_0[1] (IPUPMult)                0.00       0.10 f
+  IPUSumTree/io_inVec_0[1] (IPUSumTree)                   0.00       0.10 f
+  IPUSumTree/U3/Y (BUFX2)                                 0.03       0.13 f
+  IPUSumTree/io_sum[1] (IPUSumTree)                       0.00       0.13 f
+  io_out_innerProd[1] (out)                               0.00       0.13 f
+  data arrival time                                                  0.13
+  --------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: io_weightIn_0[2]
+              (input port)
+  Endpoint: io_out_innerProd[2]
+            (output port)
+  Path Group: (none)
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  IPU                5K_hvratio_1_1        gscl45nm
+  IPUPMult           5K_hvratio_1_1        gscl45nm
+  IPUSumTree         5K_hvratio_1_1        gscl45nm
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  input external delay                                    0.00       0.00 f
+  io_weightIn_0[2] (in)                                   0.00       0.00 f
+  IPUPMult/io_weightVec_0[2] (IPUPMult)                   0.00       0.00 f
+  IPUPMult/U24/Y (AND2X1)                                 0.05       0.06 f
+  IPUPMult/U28/YS (FAX1)                                  0.08       0.14 r
+  IPUPMult/io_pairwiseProd_0[2] (IPUPMult)                0.00       0.14 r
+  IPUSumTree/io_inVec_0[2] (IPUSumTree)                   0.00       0.14 r
+  IPUSumTree/U2/Y (BUFX2)                                 0.03       0.17 r
+  IPUSumTree/io_sum[2] (IPUSumTree)                       0.00       0.17 r
+  io_out_innerProd[2] (out)                               0.00       0.17 r
+  data arrival time                                                  0.17
+  --------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+1

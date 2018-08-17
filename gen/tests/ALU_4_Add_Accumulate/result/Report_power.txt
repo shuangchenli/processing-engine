@@ -1,0 +1,41 @@
+Information: Propagating switching activity (high effort zero delay simulation). (PWR-6)
+Warning: Design has unannotated primary inputs. (PWR-414)
+ 
+****************************************
+Report : power
+        -hier
+        -analysis_effort high
+Design : ALU
+Version: M-2016.12-SP5-4
+Date   : Wed Aug 15 10:24:08 2018
+****************************************
+
+
+Library(s) Used:
+
+    gscl45nm (File: /home/shuangchenli/FreePDK45/osu_soc/lib/files/gscl45nm_wire.db)
+
+
+Operating Conditions: typical   Library: gscl45nm
+Wire Load Model Mode: segmented
+
+Design        Wire Load Model            Library
+------------------------------------------------
+ALU                    5K_hvratio_1_1    gscl45nm
+
+
+Global Operating Voltage = 1.1  
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000pf
+    Time Units = 1ns
+    Dynamic Power Units = 1mW    (derived from V,C,T units)
+    Leakage Power Units = 1nW
+
+
+--------------------------------------------------------------------------------
+                                       Switch   Int      Leak     Total
+Hierarchy                              Power    Power    Power    Power    %
+--------------------------------------------------------------------------------
+ALU                                    7.63e-03 1.46e-02  521.002 2.27e-02 100.0
+1

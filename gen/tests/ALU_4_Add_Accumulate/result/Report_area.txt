@@ -1,0 +1,43 @@
+ 
+****************************************
+Report : area
+Design : ALU
+Version: M-2016.12-SP5-4
+Date   : Wed Aug 15 10:24:08 2018
+****************************************
+
+Library(s) Used:
+
+    gscl45nm (File: /home/shuangchenli/FreePDK45/osu_soc/lib/files/gscl45nm_wire.db)
+
+Number of ports:                           24
+Number of nets:                            61
+Number of cells:                           41
+Number of combinational cells:             41
+Number of sequential cells:                 0
+Number of macros/black boxes:               0
+Number of buf/inv:                         13
+Number of references:                      10
+
+Combinational area:                117.324999
+Buf/Inv area:                       21.118500
+Noncombinational area:               0.000000
+Macro/Black Box area:                0.000000
+Net Interconnect area:               7.963583
+
+Total cell area:                   117.324999
+Total area:                        125.288582
+
+Hierarchical area distribution
+------------------------------
+
+                                  Global cell area          Local cell area
+                                  ------------------  --------------------------- 
+Hierarchical cell                 Absolute   Percent  Combi-    Noncombi-  Black-
+                                  Total      Total    national  national   boxes   Design
+--------------------------------  ---------  -------  --------  ---------  ------  ---------
+ALU                                117.3250    100.0  117.3250     0.0000  0.0000  ALU
+--------------------------------  ---------  -------  --------  ---------  ------  ---------
+Total                                                 117.3250     0.0000  0.0000
+
+1

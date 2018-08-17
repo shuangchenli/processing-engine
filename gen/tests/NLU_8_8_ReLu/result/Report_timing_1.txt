@@ -1,0 +1,76 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay min
+        -max_paths 3
+        -sort_by group
+Design : NLU
+Version: M-2016.12-SP5-4
+Date   : Wed Aug 15 10:21:25 2018
+****************************************
+
+Operating Conditions: typical   Library: gscl45nm
+Wire Load Model Mode: segmented
+
+  Startpoint: io_in[6] (input port)
+  Endpoint: io_out[6] (output port)
+  Path Group: (none)
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  NLU                5K_hvratio_1_1        gscl45nm
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  input external delay                     0.00       0.00 r
+  io_in[6] (in)                            0.00       0.00 r
+  U26/Y (AND2X1)                           0.04       0.05 r
+  io_out[6] (out)                          0.00       0.05 r
+  data arrival time                                   0.05
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: io_in[5] (input port)
+  Endpoint: io_out[5] (output port)
+  Path Group: (none)
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  NLU                5K_hvratio_1_1        gscl45nm
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  input external delay                     0.00       0.00 r
+  io_in[5] (in)                            0.00       0.00 r
+  U25/Y (AND2X1)                           0.04       0.05 r
+  io_out[5] (out)                          0.00       0.05 r
+  data arrival time                                   0.05
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: io_in[4] (input port)
+  Endpoint: io_out[4] (output port)
+  Path Group: (none)
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  NLU                5K_hvratio_1_1        gscl45nm
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  input external delay                     0.00       0.00 r
+  io_in[4] (in)                            0.00       0.00 r
+  U24/Y (AND2X1)                           0.04       0.05 r
+  io_out[4] (out)                          0.00       0.05 r
+  data arrival time                                   0.05
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+1

@@ -1,0 +1,43 @@
+ 
+****************************************
+Report : area
+Design : RF
+Version: M-2016.12-SP5-4
+Date   : Wed Aug 15 10:23:11 2018
+****************************************
+
+Library(s) Used:
+
+    gscl45nm (File: /home/shuangchenli/FreePDK45/osu_soc/lib/files/gscl45nm_wire.db)
+
+Number of ports:                           60
+Number of nets:                          3177
+Number of cells:                         3133
+Number of combinational cells:           2861
+Number of sequential cells:               272
+Number of macros/black boxes:               0
+Number of buf/inv:                       1373
+Number of references:                      10
+
+Combinational area:               6979.898757
+Buf/Inv area:                     2683.926622
+Noncombinational area:            2170.043152
+Macro/Black Box area:                0.000000
+Net Interconnect area:             775.523041
+
+Total cell area:                  9149.941909
+Total area:                       9925.464950
+
+Hierarchical area distribution
+------------------------------
+
+                                  Global cell area          Local cell area
+                                  ------------------  ---------------------------- 
+Hierarchical cell                 Absolute   Percent  Combi-     Noncombi-  Black-
+                                  Total      Total    national   national   boxes   Design
+--------------------------------  ---------  -------  ---------  ---------  ------  ---------
+RF                                9149.9419    100.0  6979.8988  2170.0432  0.0000  RF
+--------------------------------  ---------  -------  ---------  ---------  ------  ---------
+Total                                                 6979.8988  2170.0432  0.0000
+
+1

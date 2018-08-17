@@ -1,0 +1,361 @@
+circuit RF : @[:@2.0]
+  module RF : @[:@3.2]
+    input clock : Clock @[:@4.4]
+    input reset : UInt<1> @[:@5.4]
+    input io_control_internal_wEnable_0 : UInt<1> @[:@6.4]
+    input io_control_internal_rEnable_0 : UInt<1> @[:@6.4]
+    input io_control_internal_wAddr_0 : UInt<5> @[:@6.4]
+    input io_control_internal_rAddr_0 : UInt<5> @[:@6.4]
+    input io_control_internal_bpSel_0_0 : UInt<1> @[:@6.4]
+    input io_control_external_wEnable_0 : UInt<1> @[:@6.4]
+    input io_control_external_rEnable_0 : UInt<1> @[:@6.4]
+    input io_control_external_wAddr_0 : UInt<5> @[:@6.4]
+    input io_control_external_rAddr_0 : UInt<5> @[:@6.4]
+    input io_control_external_bpSel_0_0 : UInt<1> @[:@6.4]
+    input io_wInternal_0 : SInt<8> @[:@6.4]
+    input io_wExternal_0 : SInt<8> @[:@6.4]
+    output io_rInternal_0 : SInt<8> @[:@6.4]
+    output io_rExternal_0 : SInt<8> @[:@6.4]
+  
+    reg dataRegister_0 : SInt<8>, clock with :
+      reset => (UInt<1>("h0"), dataRegister_0) @[PE.scala 76:21:@41.4]
+    reg dataRegister_1 : SInt<8>, clock with :
+      reset => (UInt<1>("h0"), dataRegister_1) @[PE.scala 76:21:@41.4]
+    reg dataRegister_2 : SInt<8>, clock with :
+      reset => (UInt<1>("h0"), dataRegister_2) @[PE.scala 76:21:@41.4]
+    reg dataRegister_3 : SInt<8>, clock with :
+      reset => (UInt<1>("h0"), dataRegister_3) @[PE.scala 76:21:@41.4]
+    reg dataRegister_4 : SInt<8>, clock with :
+      reset => (UInt<1>("h0"), dataRegister_4) @[PE.scala 76:21:@41.4]
+    reg dataRegister_5 : SInt<8>, clock with :
+      reset => (UInt<1>("h0"), dataRegister_5) @[PE.scala 76:21:@41.4]
+    reg dataRegister_6 : SInt<8>, clock with :
+      reset => (UInt<1>("h0"), dataRegister_6) @[PE.scala 76:21:@41.4]
+    reg dataRegister_7 : SInt<8>, clock with :
+      reset => (UInt<1>("h0"), dataRegister_7) @[PE.scala 76:21:@41.4]
+    reg dataRegister_8 : SInt<8>, clock with :
+      reset => (UInt<1>("h0"), dataRegister_8) @[PE.scala 76:21:@41.4]
+    reg dataRegister_9 : SInt<8>, clock with :
+      reset => (UInt<1>("h0"), dataRegister_9) @[PE.scala 76:21:@41.4]
+    reg dataRegister_10 : SInt<8>, clock with :
+      reset => (UInt<1>("h0"), dataRegister_10) @[PE.scala 76:21:@41.4]
+    reg dataRegister_11 : SInt<8>, clock with :
+      reset => (UInt<1>("h0"), dataRegister_11) @[PE.scala 76:21:@41.4]
+    reg dataRegister_12 : SInt<8>, clock with :
+      reset => (UInt<1>("h0"), dataRegister_12) @[PE.scala 76:21:@41.4]
+    reg dataRegister_13 : SInt<8>, clock with :
+      reset => (UInt<1>("h0"), dataRegister_13) @[PE.scala 76:21:@41.4]
+    reg dataRegister_14 : SInt<8>, clock with :
+      reset => (UInt<1>("h0"), dataRegister_14) @[PE.scala 76:21:@41.4]
+    reg dataRegister_15 : SInt<8>, clock with :
+      reset => (UInt<1>("h0"), dataRegister_15) @[PE.scala 76:21:@41.4]
+    reg dataRegister_16 : SInt<8>, clock with :
+      reset => (UInt<1>("h0"), dataRegister_16) @[PE.scala 76:21:@41.4]
+    reg dataRegister_17 : SInt<8>, clock with :
+      reset => (UInt<1>("h0"), dataRegister_17) @[PE.scala 76:21:@41.4]
+    reg dataRegister_18 : SInt<8>, clock with :
+      reset => (UInt<1>("h0"), dataRegister_18) @[PE.scala 76:21:@41.4]
+    reg dataRegister_19 : SInt<8>, clock with :
+      reset => (UInt<1>("h0"), dataRegister_19) @[PE.scala 76:21:@41.4]
+    reg dataRegister_20 : SInt<8>, clock with :
+      reset => (UInt<1>("h0"), dataRegister_20) @[PE.scala 76:21:@41.4]
+    reg dataRegister_21 : SInt<8>, clock with :
+      reset => (UInt<1>("h0"), dataRegister_21) @[PE.scala 76:21:@41.4]
+    reg dataRegister_22 : SInt<8>, clock with :
+      reset => (UInt<1>("h0"), dataRegister_22) @[PE.scala 76:21:@41.4]
+    reg dataRegister_23 : SInt<8>, clock with :
+      reset => (UInt<1>("h0"), dataRegister_23) @[PE.scala 76:21:@41.4]
+    reg dataRegister_24 : SInt<8>, clock with :
+      reset => (UInt<1>("h0"), dataRegister_24) @[PE.scala 76:21:@41.4]
+    reg dataRegister_25 : SInt<8>, clock with :
+      reset => (UInt<1>("h0"), dataRegister_25) @[PE.scala 76:21:@41.4]
+    reg dataRegister_26 : SInt<8>, clock with :
+      reset => (UInt<1>("h0"), dataRegister_26) @[PE.scala 76:21:@41.4]
+    reg dataRegister_27 : SInt<8>, clock with :
+      reset => (UInt<1>("h0"), dataRegister_27) @[PE.scala 76:21:@41.4]
+    reg dataRegister_28 : SInt<8>, clock with :
+      reset => (UInt<1>("h0"), dataRegister_28) @[PE.scala 76:21:@41.4]
+    reg dataRegister_29 : SInt<8>, clock with :
+      reset => (UInt<1>("h0"), dataRegister_29) @[PE.scala 76:21:@41.4]
+    reg dataRegister_30 : SInt<8>, clock with :
+      reset => (UInt<1>("h0"), dataRegister_30) @[PE.scala 76:21:@41.4]
+    reg dataRegister_31 : SInt<8>, clock with :
+      reset => (UInt<1>("h0"), dataRegister_31) @[PE.scala 76:21:@41.4]
+    reg bpRegisterInt_0 : SInt<8>, clock with :
+      reset => (UInt<1>("h0"), bpRegisterInt_0) @[PE.scala 81:21:@44.4]
+    reg bpRegisterExt_0 : SInt<8>, clock with :
+      reset => (UInt<1>("h0"), bpRegisterExt_0) @[PE.scala 83:21:@47.4]
+    node _GEN_0 = io_wInternal_0 @[PE.scala 87:85:@49.6]
+    node _GEN_4 = mux(and(UInt<1>("h1"), eq(UInt<1>("h0"), io_control_internal_wAddr_0)), _GEN_0, dataRegister_0) @[PE.scala 87:85:@49.6]
+    node _GEN_5 = mux(and(UInt<1>("h1"), eq(UInt<1>("h1"), io_control_internal_wAddr_0)), _GEN_0, dataRegister_1) @[PE.scala 87:85:@49.6]
+    node _GEN_6 = mux(and(UInt<1>("h1"), eq(UInt<2>("h2"), io_control_internal_wAddr_0)), _GEN_0, dataRegister_2) @[PE.scala 87:85:@49.6]
+    node _GEN_7 = mux(and(UInt<1>("h1"), eq(UInt<2>("h3"), io_control_internal_wAddr_0)), _GEN_0, dataRegister_3) @[PE.scala 87:85:@49.6]
+    node _GEN_8 = mux(and(UInt<1>("h1"), eq(UInt<3>("h4"), io_control_internal_wAddr_0)), _GEN_0, dataRegister_4) @[PE.scala 87:85:@49.6]
+    node _GEN_9 = mux(and(UInt<1>("h1"), eq(UInt<3>("h5"), io_control_internal_wAddr_0)), _GEN_0, dataRegister_5) @[PE.scala 87:85:@49.6]
+    node _GEN_10 = mux(and(UInt<1>("h1"), eq(UInt<3>("h6"), io_control_internal_wAddr_0)), _GEN_0, dataRegister_6) @[PE.scala 87:85:@49.6]
+    node _GEN_11 = mux(and(UInt<1>("h1"), eq(UInt<3>("h7"), io_control_internal_wAddr_0)), _GEN_0, dataRegister_7) @[PE.scala 87:85:@49.6]
+    node _GEN_12 = mux(and(UInt<1>("h1"), eq(UInt<4>("h8"), io_control_internal_wAddr_0)), _GEN_0, dataRegister_8) @[PE.scala 87:85:@49.6]
+    node _GEN_13 = mux(and(UInt<1>("h1"), eq(UInt<4>("h9"), io_control_internal_wAddr_0)), _GEN_0, dataRegister_9) @[PE.scala 87:85:@49.6]
+    node _GEN_14 = mux(and(UInt<1>("h1"), eq(UInt<4>("ha"), io_control_internal_wAddr_0)), _GEN_0, dataRegister_10) @[PE.scala 87:85:@49.6]
+    node _GEN_15 = mux(and(UInt<1>("h1"), eq(UInt<4>("hb"), io_control_internal_wAddr_0)), _GEN_0, dataRegister_11) @[PE.scala 87:85:@49.6]
+    node _GEN_16 = mux(and(UInt<1>("h1"), eq(UInt<4>("hc"), io_control_internal_wAddr_0)), _GEN_0, dataRegister_12) @[PE.scala 87:85:@49.6]
+    node _GEN_17 = mux(and(UInt<1>("h1"), eq(UInt<4>("hd"), io_control_internal_wAddr_0)), _GEN_0, dataRegister_13) @[PE.scala 87:85:@49.6]
+    node _GEN_18 = mux(and(UInt<1>("h1"), eq(UInt<4>("he"), io_control_internal_wAddr_0)), _GEN_0, dataRegister_14) @[PE.scala 87:85:@49.6]
+    node _GEN_19 = mux(and(UInt<1>("h1"), eq(UInt<4>("hf"), io_control_internal_wAddr_0)), _GEN_0, dataRegister_15) @[PE.scala 87:85:@49.6]
+    node _GEN_20 = mux(and(UInt<1>("h1"), eq(UInt<5>("h10"), io_control_internal_wAddr_0)), _GEN_0, dataRegister_16) @[PE.scala 87:85:@49.6]
+    node _GEN_21 = mux(and(UInt<1>("h1"), eq(UInt<5>("h11"), io_control_internal_wAddr_0)), _GEN_0, dataRegister_17) @[PE.scala 87:85:@49.6]
+    node _GEN_22 = mux(and(UInt<1>("h1"), eq(UInt<5>("h12"), io_control_internal_wAddr_0)), _GEN_0, dataRegister_18) @[PE.scala 87:85:@49.6]
+    node _GEN_23 = mux(and(UInt<1>("h1"), eq(UInt<5>("h13"), io_control_internal_wAddr_0)), _GEN_0, dataRegister_19) @[PE.scala 87:85:@49.6]
+    node _GEN_24 = mux(and(UInt<1>("h1"), eq(UInt<5>("h14"), io_control_internal_wAddr_0)), _GEN_0, dataRegister_20) @[PE.scala 87:85:@49.6]
+    node _GEN_25 = mux(and(UInt<1>("h1"), eq(UInt<5>("h15"), io_control_internal_wAddr_0)), _GEN_0, dataRegister_21) @[PE.scala 87:85:@49.6]
+    node _GEN_26 = mux(and(UInt<1>("h1"), eq(UInt<5>("h16"), io_control_internal_wAddr_0)), _GEN_0, dataRegister_22) @[PE.scala 87:85:@49.6]
+    node _GEN_27 = mux(and(UInt<1>("h1"), eq(UInt<5>("h17"), io_control_internal_wAddr_0)), _GEN_0, dataRegister_23) @[PE.scala 87:85:@49.6]
+    node _GEN_28 = mux(and(UInt<1>("h1"), eq(UInt<5>("h18"), io_control_internal_wAddr_0)), _GEN_0, dataRegister_24) @[PE.scala 87:85:@49.6]
+    node _GEN_29 = mux(and(UInt<1>("h1"), eq(UInt<5>("h19"), io_control_internal_wAddr_0)), _GEN_0, dataRegister_25) @[PE.scala 87:85:@49.6]
+    node _GEN_30 = mux(and(UInt<1>("h1"), eq(UInt<5>("h1a"), io_control_internal_wAddr_0)), _GEN_0, dataRegister_26) @[PE.scala 87:85:@49.6]
+    node _GEN_31 = mux(and(UInt<1>("h1"), eq(UInt<5>("h1b"), io_control_internal_wAddr_0)), _GEN_0, dataRegister_27) @[PE.scala 87:85:@49.6]
+    node _GEN_32 = mux(and(UInt<1>("h1"), eq(UInt<5>("h1c"), io_control_internal_wAddr_0)), _GEN_0, dataRegister_28) @[PE.scala 87:85:@49.6]
+    node _GEN_33 = mux(and(UInt<1>("h1"), eq(UInt<5>("h1d"), io_control_internal_wAddr_0)), _GEN_0, dataRegister_29) @[PE.scala 87:85:@49.6]
+    node _GEN_34 = mux(and(UInt<1>("h1"), eq(UInt<5>("h1e"), io_control_internal_wAddr_0)), _GEN_0, dataRegister_30) @[PE.scala 87:85:@49.6]
+    node _GEN_35 = mux(and(UInt<1>("h1"), eq(UInt<5>("h1f"), io_control_internal_wAddr_0)), _GEN_0, dataRegister_31) @[PE.scala 87:85:@49.6]
+    node _GEN_36 = mux(io_control_internal_wEnable_0, _GEN_4, dataRegister_0) @[PE.scala 86:51:@48.4]
+    node _GEN_37 = mux(io_control_internal_wEnable_0, _GEN_5, dataRegister_1) @[PE.scala 86:51:@48.4]
+    node _GEN_38 = mux(io_control_internal_wEnable_0, _GEN_6, dataRegister_2) @[PE.scala 86:51:@48.4]
+    node _GEN_39 = mux(io_control_internal_wEnable_0, _GEN_7, dataRegister_3) @[PE.scala 86:51:@48.4]
+    node _GEN_40 = mux(io_control_internal_wEnable_0, _GEN_8, dataRegister_4) @[PE.scala 86:51:@48.4]
+    node _GEN_41 = mux(io_control_internal_wEnable_0, _GEN_9, dataRegister_5) @[PE.scala 86:51:@48.4]
+    node _GEN_42 = mux(io_control_internal_wEnable_0, _GEN_10, dataRegister_6) @[PE.scala 86:51:@48.4]
+    node _GEN_43 = mux(io_control_internal_wEnable_0, _GEN_11, dataRegister_7) @[PE.scala 86:51:@48.4]
+    node _GEN_44 = mux(io_control_internal_wEnable_0, _GEN_12, dataRegister_8) @[PE.scala 86:51:@48.4]
+    node _GEN_45 = mux(io_control_internal_wEnable_0, _GEN_13, dataRegister_9) @[PE.scala 86:51:@48.4]
+    node _GEN_46 = mux(io_control_internal_wEnable_0, _GEN_14, dataRegister_10) @[PE.scala 86:51:@48.4]
+    node _GEN_47 = mux(io_control_internal_wEnable_0, _GEN_15, dataRegister_11) @[PE.scala 86:51:@48.4]
+    node _GEN_48 = mux(io_control_internal_wEnable_0, _GEN_16, dataRegister_12) @[PE.scala 86:51:@48.4]
+    node _GEN_49 = mux(io_control_internal_wEnable_0, _GEN_17, dataRegister_13) @[PE.scala 86:51:@48.4]
+    node _GEN_50 = mux(io_control_internal_wEnable_0, _GEN_18, dataRegister_14) @[PE.scala 86:51:@48.4]
+    node _GEN_51 = mux(io_control_internal_wEnable_0, _GEN_19, dataRegister_15) @[PE.scala 86:51:@48.4]
+    node _GEN_52 = mux(io_control_internal_wEnable_0, _GEN_20, dataRegister_16) @[PE.scala 86:51:@48.4]
+    node _GEN_53 = mux(io_control_internal_wEnable_0, _GEN_21, dataRegister_17) @[PE.scala 86:51:@48.4]
+    node _GEN_54 = mux(io_control_internal_wEnable_0, _GEN_22, dataRegister_18) @[PE.scala 86:51:@48.4]
+    node _GEN_55 = mux(io_control_internal_wEnable_0, _GEN_23, dataRegister_19) @[PE.scala 86:51:@48.4]
+    node _GEN_56 = mux(io_control_internal_wEnable_0, _GEN_24, dataRegister_20) @[PE.scala 86:51:@48.4]
+    node _GEN_57 = mux(io_control_internal_wEnable_0, _GEN_25, dataRegister_21) @[PE.scala 86:51:@48.4]
+    node _GEN_58 = mux(io_control_internal_wEnable_0, _GEN_26, dataRegister_22) @[PE.scala 86:51:@48.4]
+    node _GEN_59 = mux(io_control_internal_wEnable_0, _GEN_27, dataRegister_23) @[PE.scala 86:51:@48.4]
+    node _GEN_60 = mux(io_control_internal_wEnable_0, _GEN_28, dataRegister_24) @[PE.scala 86:51:@48.4]
+    node _GEN_61 = mux(io_control_internal_wEnable_0, _GEN_29, dataRegister_25) @[PE.scala 86:51:@48.4]
+    node _GEN_62 = mux(io_control_internal_wEnable_0, _GEN_30, dataRegister_26) @[PE.scala 86:51:@48.4]
+    node _GEN_63 = mux(io_control_internal_wEnable_0, _GEN_31, dataRegister_27) @[PE.scala 86:51:@48.4]
+    node _GEN_64 = mux(io_control_internal_wEnable_0, _GEN_32, dataRegister_28) @[PE.scala 86:51:@48.4]
+    node _GEN_65 = mux(io_control_internal_wEnable_0, _GEN_33, dataRegister_29) @[PE.scala 86:51:@48.4]
+    node _GEN_66 = mux(io_control_internal_wEnable_0, _GEN_34, dataRegister_30) @[PE.scala 86:51:@48.4]
+    node _GEN_67 = mux(io_control_internal_wEnable_0, _GEN_35, dataRegister_31) @[PE.scala 86:51:@48.4]
+    node _GEN_68 = mux(io_control_internal_wEnable_0, io_wInternal_0, bpRegisterInt_0) @[PE.scala 86:51:@48.4]
+    node _GEN_1 = io_wExternal_0 @[PE.scala 94:85:@53.6]
+    node _GEN_69 = mux(and(UInt<1>("h1"), eq(UInt<1>("h0"), io_control_external_wAddr_0)), _GEN_1, _GEN_36) @[PE.scala 94:85:@53.6]
+    node _GEN_70 = mux(and(UInt<1>("h1"), eq(UInt<1>("h1"), io_control_external_wAddr_0)), _GEN_1, _GEN_37) @[PE.scala 94:85:@53.6]
+    node _GEN_71 = mux(and(UInt<1>("h1"), eq(UInt<2>("h2"), io_control_external_wAddr_0)), _GEN_1, _GEN_38) @[PE.scala 94:85:@53.6]
+    node _GEN_72 = mux(and(UInt<1>("h1"), eq(UInt<2>("h3"), io_control_external_wAddr_0)), _GEN_1, _GEN_39) @[PE.scala 94:85:@53.6]
+    node _GEN_73 = mux(and(UInt<1>("h1"), eq(UInt<3>("h4"), io_control_external_wAddr_0)), _GEN_1, _GEN_40) @[PE.scala 94:85:@53.6]
+    node _GEN_74 = mux(and(UInt<1>("h1"), eq(UInt<3>("h5"), io_control_external_wAddr_0)), _GEN_1, _GEN_41) @[PE.scala 94:85:@53.6]
+    node _GEN_75 = mux(and(UInt<1>("h1"), eq(UInt<3>("h6"), io_control_external_wAddr_0)), _GEN_1, _GEN_42) @[PE.scala 94:85:@53.6]
+    node _GEN_76 = mux(and(UInt<1>("h1"), eq(UInt<3>("h7"), io_control_external_wAddr_0)), _GEN_1, _GEN_43) @[PE.scala 94:85:@53.6]
+    node _GEN_77 = mux(and(UInt<1>("h1"), eq(UInt<4>("h8"), io_control_external_wAddr_0)), _GEN_1, _GEN_44) @[PE.scala 94:85:@53.6]
+    node _GEN_78 = mux(and(UInt<1>("h1"), eq(UInt<4>("h9"), io_control_external_wAddr_0)), _GEN_1, _GEN_45) @[PE.scala 94:85:@53.6]
+    node _GEN_79 = mux(and(UInt<1>("h1"), eq(UInt<4>("ha"), io_control_external_wAddr_0)), _GEN_1, _GEN_46) @[PE.scala 94:85:@53.6]
+    node _GEN_80 = mux(and(UInt<1>("h1"), eq(UInt<4>("hb"), io_control_external_wAddr_0)), _GEN_1, _GEN_47) @[PE.scala 94:85:@53.6]
+    node _GEN_81 = mux(and(UInt<1>("h1"), eq(UInt<4>("hc"), io_control_external_wAddr_0)), _GEN_1, _GEN_48) @[PE.scala 94:85:@53.6]
+    node _GEN_82 = mux(and(UInt<1>("h1"), eq(UInt<4>("hd"), io_control_external_wAddr_0)), _GEN_1, _GEN_49) @[PE.scala 94:85:@53.6]
+    node _GEN_83 = mux(and(UInt<1>("h1"), eq(UInt<4>("he"), io_control_external_wAddr_0)), _GEN_1, _GEN_50) @[PE.scala 94:85:@53.6]
+    node _GEN_84 = mux(and(UInt<1>("h1"), eq(UInt<4>("hf"), io_control_external_wAddr_0)), _GEN_1, _GEN_51) @[PE.scala 94:85:@53.6]
+    node _GEN_85 = mux(and(UInt<1>("h1"), eq(UInt<5>("h10"), io_control_external_wAddr_0)), _GEN_1, _GEN_52) @[PE.scala 94:85:@53.6]
+    node _GEN_86 = mux(and(UInt<1>("h1"), eq(UInt<5>("h11"), io_control_external_wAddr_0)), _GEN_1, _GEN_53) @[PE.scala 94:85:@53.6]
+    node _GEN_87 = mux(and(UInt<1>("h1"), eq(UInt<5>("h12"), io_control_external_wAddr_0)), _GEN_1, _GEN_54) @[PE.scala 94:85:@53.6]
+    node _GEN_88 = mux(and(UInt<1>("h1"), eq(UInt<5>("h13"), io_control_external_wAddr_0)), _GEN_1, _GEN_55) @[PE.scala 94:85:@53.6]
+    node _GEN_89 = mux(and(UInt<1>("h1"), eq(UInt<5>("h14"), io_control_external_wAddr_0)), _GEN_1, _GEN_56) @[PE.scala 94:85:@53.6]
+    node _GEN_90 = mux(and(UInt<1>("h1"), eq(UInt<5>("h15"), io_control_external_wAddr_0)), _GEN_1, _GEN_57) @[PE.scala 94:85:@53.6]
+    node _GEN_91 = mux(and(UInt<1>("h1"), eq(UInt<5>("h16"), io_control_external_wAddr_0)), _GEN_1, _GEN_58) @[PE.scala 94:85:@53.6]
+    node _GEN_92 = mux(and(UInt<1>("h1"), eq(UInt<5>("h17"), io_control_external_wAddr_0)), _GEN_1, _GEN_59) @[PE.scala 94:85:@53.6]
+    node _GEN_93 = mux(and(UInt<1>("h1"), eq(UInt<5>("h18"), io_control_external_wAddr_0)), _GEN_1, _GEN_60) @[PE.scala 94:85:@53.6]
+    node _GEN_94 = mux(and(UInt<1>("h1"), eq(UInt<5>("h19"), io_control_external_wAddr_0)), _GEN_1, _GEN_61) @[PE.scala 94:85:@53.6]
+    node _GEN_95 = mux(and(UInt<1>("h1"), eq(UInt<5>("h1a"), io_control_external_wAddr_0)), _GEN_1, _GEN_62) @[PE.scala 94:85:@53.6]
+    node _GEN_96 = mux(and(UInt<1>("h1"), eq(UInt<5>("h1b"), io_control_external_wAddr_0)), _GEN_1, _GEN_63) @[PE.scala 94:85:@53.6]
+    node _GEN_97 = mux(and(UInt<1>("h1"), eq(UInt<5>("h1c"), io_control_external_wAddr_0)), _GEN_1, _GEN_64) @[PE.scala 94:85:@53.6]
+    node _GEN_98 = mux(and(UInt<1>("h1"), eq(UInt<5>("h1d"), io_control_external_wAddr_0)), _GEN_1, _GEN_65) @[PE.scala 94:85:@53.6]
+    node _GEN_99 = mux(and(UInt<1>("h1"), eq(UInt<5>("h1e"), io_control_external_wAddr_0)), _GEN_1, _GEN_66) @[PE.scala 94:85:@53.6]
+    node _GEN_100 = mux(and(UInt<1>("h1"), eq(UInt<5>("h1f"), io_control_external_wAddr_0)), _GEN_1, _GEN_67) @[PE.scala 94:85:@53.6]
+    node _GEN_101 = mux(io_control_external_wEnable_0, _GEN_69, _GEN_36) @[PE.scala 93:51:@52.4]
+    node _GEN_102 = mux(io_control_external_wEnable_0, _GEN_70, _GEN_37) @[PE.scala 93:51:@52.4]
+    node _GEN_103 = mux(io_control_external_wEnable_0, _GEN_71, _GEN_38) @[PE.scala 93:51:@52.4]
+    node _GEN_104 = mux(io_control_external_wEnable_0, _GEN_72, _GEN_39) @[PE.scala 93:51:@52.4]
+    node _GEN_105 = mux(io_control_external_wEnable_0, _GEN_73, _GEN_40) @[PE.scala 93:51:@52.4]
+    node _GEN_106 = mux(io_control_external_wEnable_0, _GEN_74, _GEN_41) @[PE.scala 93:51:@52.4]
+    node _GEN_107 = mux(io_control_external_wEnable_0, _GEN_75, _GEN_42) @[PE.scala 93:51:@52.4]
+    node _GEN_108 = mux(io_control_external_wEnable_0, _GEN_76, _GEN_43) @[PE.scala 93:51:@52.4]
+    node _GEN_109 = mux(io_control_external_wEnable_0, _GEN_77, _GEN_44) @[PE.scala 93:51:@52.4]
+    node _GEN_110 = mux(io_control_external_wEnable_0, _GEN_78, _GEN_45) @[PE.scala 93:51:@52.4]
+    node _GEN_111 = mux(io_control_external_wEnable_0, _GEN_79, _GEN_46) @[PE.scala 93:51:@52.4]
+    node _GEN_112 = mux(io_control_external_wEnable_0, _GEN_80, _GEN_47) @[PE.scala 93:51:@52.4]
+    node _GEN_113 = mux(io_control_external_wEnable_0, _GEN_81, _GEN_48) @[PE.scala 93:51:@52.4]
+    node _GEN_114 = mux(io_control_external_wEnable_0, _GEN_82, _GEN_49) @[PE.scala 93:51:@52.4]
+    node _GEN_115 = mux(io_control_external_wEnable_0, _GEN_83, _GEN_50) @[PE.scala 93:51:@52.4]
+    node _GEN_116 = mux(io_control_external_wEnable_0, _GEN_84, _GEN_51) @[PE.scala 93:51:@52.4]
+    node _GEN_117 = mux(io_control_external_wEnable_0, _GEN_85, _GEN_52) @[PE.scala 93:51:@52.4]
+    node _GEN_118 = mux(io_control_external_wEnable_0, _GEN_86, _GEN_53) @[PE.scala 93:51:@52.4]
+    node _GEN_119 = mux(io_control_external_wEnable_0, _GEN_87, _GEN_54) @[PE.scala 93:51:@52.4]
+    node _GEN_120 = mux(io_control_external_wEnable_0, _GEN_88, _GEN_55) @[PE.scala 93:51:@52.4]
+    node _GEN_121 = mux(io_control_external_wEnable_0, _GEN_89, _GEN_56) @[PE.scala 93:51:@52.4]
+    node _GEN_122 = mux(io_control_external_wEnable_0, _GEN_90, _GEN_57) @[PE.scala 93:51:@52.4]
+    node _GEN_123 = mux(io_control_external_wEnable_0, _GEN_91, _GEN_58) @[PE.scala 93:51:@52.4]
+    node _GEN_124 = mux(io_control_external_wEnable_0, _GEN_92, _GEN_59) @[PE.scala 93:51:@52.4]
+    node _GEN_125 = mux(io_control_external_wEnable_0, _GEN_93, _GEN_60) @[PE.scala 93:51:@52.4]
+    node _GEN_126 = mux(io_control_external_wEnable_0, _GEN_94, _GEN_61) @[PE.scala 93:51:@52.4]
+    node _GEN_127 = mux(io_control_external_wEnable_0, _GEN_95, _GEN_62) @[PE.scala 93:51:@52.4]
+    node _GEN_128 = mux(io_control_external_wEnable_0, _GEN_96, _GEN_63) @[PE.scala 93:51:@52.4]
+    node _GEN_129 = mux(io_control_external_wEnable_0, _GEN_97, _GEN_64) @[PE.scala 93:51:@52.4]
+    node _GEN_130 = mux(io_control_external_wEnable_0, _GEN_98, _GEN_65) @[PE.scala 93:51:@52.4]
+    node _GEN_131 = mux(io_control_external_wEnable_0, _GEN_99, _GEN_66) @[PE.scala 93:51:@52.4]
+    node _GEN_132 = mux(io_control_external_wEnable_0, _GEN_100, _GEN_67) @[PE.scala 93:51:@52.4]
+    node _GEN_133 = mux(io_control_external_wEnable_0, io_wExternal_0, bpRegisterExt_0) @[PE.scala 93:51:@52.4]
+    node _T_383 = eq(io_control_internal_bpSel_0_0, UInt<1>("h1")) @[PE.scala 104:68:@57.6]
+    node _T_385 = or(UInt<1>("h0"), _T_383) @[PE.scala 104:68:@58.6]
+    node _GEN_134 = mux(and(UInt<1>("h1"), eq(UInt<1>("h1"), io_control_internal_rAddr_0)), dataRegister_1, dataRegister_0) @[PE.scala 108:37:@63.8]
+    node _GEN_135 = mux(and(UInt<1>("h1"), eq(UInt<2>("h2"), io_control_internal_rAddr_0)), dataRegister_2, _GEN_134) @[PE.scala 108:37:@63.8]
+    node _GEN_136 = mux(and(UInt<1>("h1"), eq(UInt<2>("h3"), io_control_internal_rAddr_0)), dataRegister_3, _GEN_135) @[PE.scala 108:37:@63.8]
+    node _GEN_137 = mux(and(UInt<1>("h1"), eq(UInt<3>("h4"), io_control_internal_rAddr_0)), dataRegister_4, _GEN_136) @[PE.scala 108:37:@63.8]
+    node _GEN_138 = mux(and(UInt<1>("h1"), eq(UInt<3>("h5"), io_control_internal_rAddr_0)), dataRegister_5, _GEN_137) @[PE.scala 108:37:@63.8]
+    node _GEN_139 = mux(and(UInt<1>("h1"), eq(UInt<3>("h6"), io_control_internal_rAddr_0)), dataRegister_6, _GEN_138) @[PE.scala 108:37:@63.8]
+    node _GEN_140 = mux(and(UInt<1>("h1"), eq(UInt<3>("h7"), io_control_internal_rAddr_0)), dataRegister_7, _GEN_139) @[PE.scala 108:37:@63.8]
+    node _GEN_141 = mux(and(UInt<1>("h1"), eq(UInt<4>("h8"), io_control_internal_rAddr_0)), dataRegister_8, _GEN_140) @[PE.scala 108:37:@63.8]
+    node _GEN_142 = mux(and(UInt<1>("h1"), eq(UInt<4>("h9"), io_control_internal_rAddr_0)), dataRegister_9, _GEN_141) @[PE.scala 108:37:@63.8]
+    node _GEN_143 = mux(and(UInt<1>("h1"), eq(UInt<4>("ha"), io_control_internal_rAddr_0)), dataRegister_10, _GEN_142) @[PE.scala 108:37:@63.8]
+    node _GEN_144 = mux(and(UInt<1>("h1"), eq(UInt<4>("hb"), io_control_internal_rAddr_0)), dataRegister_11, _GEN_143) @[PE.scala 108:37:@63.8]
+    node _GEN_145 = mux(and(UInt<1>("h1"), eq(UInt<4>("hc"), io_control_internal_rAddr_0)), dataRegister_12, _GEN_144) @[PE.scala 108:37:@63.8]
+    node _GEN_146 = mux(and(UInt<1>("h1"), eq(UInt<4>("hd"), io_control_internal_rAddr_0)), dataRegister_13, _GEN_145) @[PE.scala 108:37:@63.8]
+    node _GEN_147 = mux(and(UInt<1>("h1"), eq(UInt<4>("he"), io_control_internal_rAddr_0)), dataRegister_14, _GEN_146) @[PE.scala 108:37:@63.8]
+    node _GEN_148 = mux(and(UInt<1>("h1"), eq(UInt<4>("hf"), io_control_internal_rAddr_0)), dataRegister_15, _GEN_147) @[PE.scala 108:37:@63.8]
+    node _GEN_149 = mux(and(UInt<1>("h1"), eq(UInt<5>("h10"), io_control_internal_rAddr_0)), dataRegister_16, _GEN_148) @[PE.scala 108:37:@63.8]
+    node _GEN_150 = mux(and(UInt<1>("h1"), eq(UInt<5>("h11"), io_control_internal_rAddr_0)), dataRegister_17, _GEN_149) @[PE.scala 108:37:@63.8]
+    node _GEN_151 = mux(and(UInt<1>("h1"), eq(UInt<5>("h12"), io_control_internal_rAddr_0)), dataRegister_18, _GEN_150) @[PE.scala 108:37:@63.8]
+    node _GEN_152 = mux(and(UInt<1>("h1"), eq(UInt<5>("h13"), io_control_internal_rAddr_0)), dataRegister_19, _GEN_151) @[PE.scala 108:37:@63.8]
+    node _GEN_153 = mux(and(UInt<1>("h1"), eq(UInt<5>("h14"), io_control_internal_rAddr_0)), dataRegister_20, _GEN_152) @[PE.scala 108:37:@63.8]
+    node _GEN_154 = mux(and(UInt<1>("h1"), eq(UInt<5>("h15"), io_control_internal_rAddr_0)), dataRegister_21, _GEN_153) @[PE.scala 108:37:@63.8]
+    node _GEN_155 = mux(and(UInt<1>("h1"), eq(UInt<5>("h16"), io_control_internal_rAddr_0)), dataRegister_22, _GEN_154) @[PE.scala 108:37:@63.8]
+    node _GEN_156 = mux(and(UInt<1>("h1"), eq(UInt<5>("h17"), io_control_internal_rAddr_0)), dataRegister_23, _GEN_155) @[PE.scala 108:37:@63.8]
+    node _GEN_157 = mux(and(UInt<1>("h1"), eq(UInt<5>("h18"), io_control_internal_rAddr_0)), dataRegister_24, _GEN_156) @[PE.scala 108:37:@63.8]
+    node _GEN_158 = mux(and(UInt<1>("h1"), eq(UInt<5>("h19"), io_control_internal_rAddr_0)), dataRegister_25, _GEN_157) @[PE.scala 108:37:@63.8]
+    node _GEN_159 = mux(and(UInt<1>("h1"), eq(UInt<5>("h1a"), io_control_internal_rAddr_0)), dataRegister_26, _GEN_158) @[PE.scala 108:37:@63.8]
+    node _GEN_160 = mux(and(UInt<1>("h1"), eq(UInt<5>("h1b"), io_control_internal_rAddr_0)), dataRegister_27, _GEN_159) @[PE.scala 108:37:@63.8]
+    node _GEN_161 = mux(and(UInt<1>("h1"), eq(UInt<5>("h1c"), io_control_internal_rAddr_0)), dataRegister_28, _GEN_160) @[PE.scala 108:37:@63.8]
+    node _GEN_162 = mux(and(UInt<1>("h1"), eq(UInt<5>("h1d"), io_control_internal_rAddr_0)), dataRegister_29, _GEN_161) @[PE.scala 108:37:@63.8]
+    node _GEN_163 = mux(and(UInt<1>("h1"), eq(UInt<5>("h1e"), io_control_internal_rAddr_0)), dataRegister_30, _GEN_162) @[PE.scala 108:37:@63.8]
+    node _GEN_164 = mux(and(UInt<1>("h1"), eq(UInt<5>("h1f"), io_control_internal_rAddr_0)), dataRegister_31, _GEN_163) @[PE.scala 108:37:@63.8]
+    node _GEN_2 = _GEN_164 @[PE.scala 108:37:@63.8]
+    node _GEN_165 = mux(_T_385, bpRegisterExt_0, _GEN_2) @[PE.scala 104:78:@59.6]
+    node _GEN_166 = mux(io_control_internal_rEnable_0, _GEN_165, asSInt(UInt<1>("h0"))) @[PE.scala 100:51:@56.4]
+    node _T_391 = eq(io_control_external_bpSel_0_0, UInt<1>("h1")) @[PE.scala 123:68:@70.6]
+    node _T_393 = or(UInt<1>("h0"), _T_391) @[PE.scala 123:68:@71.6]
+    node _GEN_167 = mux(and(UInt<1>("h1"), eq(UInt<1>("h1"), io_control_external_rAddr_0)), dataRegister_1, dataRegister_0) @[PE.scala 127:37:@76.8]
+    node _GEN_168 = mux(and(UInt<1>("h1"), eq(UInt<2>("h2"), io_control_external_rAddr_0)), dataRegister_2, _GEN_167) @[PE.scala 127:37:@76.8]
+    node _GEN_169 = mux(and(UInt<1>("h1"), eq(UInt<2>("h3"), io_control_external_rAddr_0)), dataRegister_3, _GEN_168) @[PE.scala 127:37:@76.8]
+    node _GEN_170 = mux(and(UInt<1>("h1"), eq(UInt<3>("h4"), io_control_external_rAddr_0)), dataRegister_4, _GEN_169) @[PE.scala 127:37:@76.8]
+    node _GEN_171 = mux(and(UInt<1>("h1"), eq(UInt<3>("h5"), io_control_external_rAddr_0)), dataRegister_5, _GEN_170) @[PE.scala 127:37:@76.8]
+    node _GEN_172 = mux(and(UInt<1>("h1"), eq(UInt<3>("h6"), io_control_external_rAddr_0)), dataRegister_6, _GEN_171) @[PE.scala 127:37:@76.8]
+    node _GEN_173 = mux(and(UInt<1>("h1"), eq(UInt<3>("h7"), io_control_external_rAddr_0)), dataRegister_7, _GEN_172) @[PE.scala 127:37:@76.8]
+    node _GEN_174 = mux(and(UInt<1>("h1"), eq(UInt<4>("h8"), io_control_external_rAddr_0)), dataRegister_8, _GEN_173) @[PE.scala 127:37:@76.8]
+    node _GEN_175 = mux(and(UInt<1>("h1"), eq(UInt<4>("h9"), io_control_external_rAddr_0)), dataRegister_9, _GEN_174) @[PE.scala 127:37:@76.8]
+    node _GEN_176 = mux(and(UInt<1>("h1"), eq(UInt<4>("ha"), io_control_external_rAddr_0)), dataRegister_10, _GEN_175) @[PE.scala 127:37:@76.8]
+    node _GEN_177 = mux(and(UInt<1>("h1"), eq(UInt<4>("hb"), io_control_external_rAddr_0)), dataRegister_11, _GEN_176) @[PE.scala 127:37:@76.8]
+    node _GEN_178 = mux(and(UInt<1>("h1"), eq(UInt<4>("hc"), io_control_external_rAddr_0)), dataRegister_12, _GEN_177) @[PE.scala 127:37:@76.8]
+    node _GEN_179 = mux(and(UInt<1>("h1"), eq(UInt<4>("hd"), io_control_external_rAddr_0)), dataRegister_13, _GEN_178) @[PE.scala 127:37:@76.8]
+    node _GEN_180 = mux(and(UInt<1>("h1"), eq(UInt<4>("he"), io_control_external_rAddr_0)), dataRegister_14, _GEN_179) @[PE.scala 127:37:@76.8]
+    node _GEN_181 = mux(and(UInt<1>("h1"), eq(UInt<4>("hf"), io_control_external_rAddr_0)), dataRegister_15, _GEN_180) @[PE.scala 127:37:@76.8]
+    node _GEN_182 = mux(and(UInt<1>("h1"), eq(UInt<5>("h10"), io_control_external_rAddr_0)), dataRegister_16, _GEN_181) @[PE.scala 127:37:@76.8]
+    node _GEN_183 = mux(and(UInt<1>("h1"), eq(UInt<5>("h11"), io_control_external_rAddr_0)), dataRegister_17, _GEN_182) @[PE.scala 127:37:@76.8]
+    node _GEN_184 = mux(and(UInt<1>("h1"), eq(UInt<5>("h12"), io_control_external_rAddr_0)), dataRegister_18, _GEN_183) @[PE.scala 127:37:@76.8]
+    node _GEN_185 = mux(and(UInt<1>("h1"), eq(UInt<5>("h13"), io_control_external_rAddr_0)), dataRegister_19, _GEN_184) @[PE.scala 127:37:@76.8]
+    node _GEN_186 = mux(and(UInt<1>("h1"), eq(UInt<5>("h14"), io_control_external_rAddr_0)), dataRegister_20, _GEN_185) @[PE.scala 127:37:@76.8]
+    node _GEN_187 = mux(and(UInt<1>("h1"), eq(UInt<5>("h15"), io_control_external_rAddr_0)), dataRegister_21, _GEN_186) @[PE.scala 127:37:@76.8]
+    node _GEN_188 = mux(and(UInt<1>("h1"), eq(UInt<5>("h16"), io_control_external_rAddr_0)), dataRegister_22, _GEN_187) @[PE.scala 127:37:@76.8]
+    node _GEN_189 = mux(and(UInt<1>("h1"), eq(UInt<5>("h17"), io_control_external_rAddr_0)), dataRegister_23, _GEN_188) @[PE.scala 127:37:@76.8]
+    node _GEN_190 = mux(and(UInt<1>("h1"), eq(UInt<5>("h18"), io_control_external_rAddr_0)), dataRegister_24, _GEN_189) @[PE.scala 127:37:@76.8]
+    node _GEN_191 = mux(and(UInt<1>("h1"), eq(UInt<5>("h19"), io_control_external_rAddr_0)), dataRegister_25, _GEN_190) @[PE.scala 127:37:@76.8]
+    node _GEN_192 = mux(and(UInt<1>("h1"), eq(UInt<5>("h1a"), io_control_external_rAddr_0)), dataRegister_26, _GEN_191) @[PE.scala 127:37:@76.8]
+    node _GEN_193 = mux(and(UInt<1>("h1"), eq(UInt<5>("h1b"), io_control_external_rAddr_0)), dataRegister_27, _GEN_192) @[PE.scala 127:37:@76.8]
+    node _GEN_194 = mux(and(UInt<1>("h1"), eq(UInt<5>("h1c"), io_control_external_rAddr_0)), dataRegister_28, _GEN_193) @[PE.scala 127:37:@76.8]
+    node _GEN_195 = mux(and(UInt<1>("h1"), eq(UInt<5>("h1d"), io_control_external_rAddr_0)), dataRegister_29, _GEN_194) @[PE.scala 127:37:@76.8]
+    node _GEN_196 = mux(and(UInt<1>("h1"), eq(UInt<5>("h1e"), io_control_external_rAddr_0)), dataRegister_30, _GEN_195) @[PE.scala 127:37:@76.8]
+    node _GEN_197 = mux(and(UInt<1>("h1"), eq(UInt<5>("h1f"), io_control_external_rAddr_0)), dataRegister_31, _GEN_196) @[PE.scala 127:37:@76.8]
+    node _GEN_3 = _GEN_197 @[PE.scala 127:37:@76.8]
+    node _GEN_198 = mux(_T_393, bpRegisterInt_0, _GEN_3) @[PE.scala 123:78:@72.6]
+    node _GEN_199 = mux(io_control_external_rEnable_0, _GEN_198, asSInt(UInt<1>("h0"))) @[PE.scala 119:51:@69.4]
+    node _T_133_0 = asSInt(UInt<8>("h0")) @[PE.scala 76:57:@8.4]
+    node _T_133_1 = asSInt(UInt<8>("h0")) @[PE.scala 76:57:@8.4]
+    node _T_133_2 = asSInt(UInt<8>("h0")) @[PE.scala 76:57:@8.4]
+    node _T_133_3 = asSInt(UInt<8>("h0")) @[PE.scala 76:57:@8.4]
+    node _T_133_4 = asSInt(UInt<8>("h0")) @[PE.scala 76:57:@8.4]
+    node _T_133_5 = asSInt(UInt<8>("h0")) @[PE.scala 76:57:@8.4]
+    node _T_133_6 = asSInt(UInt<8>("h0")) @[PE.scala 76:57:@8.4]
+    node _T_133_7 = asSInt(UInt<8>("h0")) @[PE.scala 76:57:@8.4]
+    node _T_133_8 = asSInt(UInt<8>("h0")) @[PE.scala 76:57:@8.4]
+    node _T_133_9 = asSInt(UInt<8>("h0")) @[PE.scala 76:57:@8.4]
+    node _T_133_10 = asSInt(UInt<8>("h0")) @[PE.scala 76:57:@8.4]
+    node _T_133_11 = asSInt(UInt<8>("h0")) @[PE.scala 76:57:@8.4]
+    node _T_133_12 = asSInt(UInt<8>("h0")) @[PE.scala 76:57:@8.4]
+    node _T_133_13 = asSInt(UInt<8>("h0")) @[PE.scala 76:57:@8.4]
+    node _T_133_14 = asSInt(UInt<8>("h0")) @[PE.scala 76:57:@8.4]
+    node _T_133_15 = asSInt(UInt<8>("h0")) @[PE.scala 76:57:@8.4]
+    node _T_133_16 = asSInt(UInt<8>("h0")) @[PE.scala 76:57:@8.4]
+    node _T_133_17 = asSInt(UInt<8>("h0")) @[PE.scala 76:57:@8.4]
+    node _T_133_18 = asSInt(UInt<8>("h0")) @[PE.scala 76:57:@8.4]
+    node _T_133_19 = asSInt(UInt<8>("h0")) @[PE.scala 76:57:@8.4]
+    node _T_133_20 = asSInt(UInt<8>("h0")) @[PE.scala 76:57:@8.4]
+    node _T_133_21 = asSInt(UInt<8>("h0")) @[PE.scala 76:57:@8.4]
+    node _T_133_22 = asSInt(UInt<8>("h0")) @[PE.scala 76:57:@8.4]
+    node _T_133_23 = asSInt(UInt<8>("h0")) @[PE.scala 76:57:@8.4]
+    node _T_133_24 = asSInt(UInt<8>("h0")) @[PE.scala 76:57:@8.4]
+    node _T_133_25 = asSInt(UInt<8>("h0")) @[PE.scala 76:57:@8.4]
+    node _T_133_26 = asSInt(UInt<8>("h0")) @[PE.scala 76:57:@8.4]
+    node _T_133_27 = asSInt(UInt<8>("h0")) @[PE.scala 76:57:@8.4]
+    node _T_133_28 = asSInt(UInt<8>("h0")) @[PE.scala 76:57:@8.4]
+    node _T_133_29 = asSInt(UInt<8>("h0")) @[PE.scala 76:57:@8.4]
+    node _T_133_30 = asSInt(UInt<8>("h0")) @[PE.scala 76:57:@8.4]
+    node _T_133_31 = asSInt(UInt<8>("h0")) @[PE.scala 76:57:@8.4]
+    node _T_339_0 = asSInt(UInt<8>("h0")) @[PE.scala 81:46:@42.4]
+    node _T_359_0 = asSInt(UInt<8>("h0")) @[PE.scala 83:46:@45.4]
+    io_rInternal_0 <= _GEN_166
+    io_rExternal_0 <= _GEN_199
+    dataRegister_0 <= mux(reset, _T_133_0, _GEN_101)
+    dataRegister_1 <= mux(reset, _T_133_1, _GEN_102)
+    dataRegister_2 <= mux(reset, _T_133_2, _GEN_103)
+    dataRegister_3 <= mux(reset, _T_133_3, _GEN_104)
+    dataRegister_4 <= mux(reset, _T_133_4, _GEN_105)
+    dataRegister_5 <= mux(reset, _T_133_5, _GEN_106)
+    dataRegister_6 <= mux(reset, _T_133_6, _GEN_107)
+    dataRegister_7 <= mux(reset, _T_133_7, _GEN_108)
+    dataRegister_8 <= mux(reset, _T_133_8, _GEN_109)
+    dataRegister_9 <= mux(reset, _T_133_9, _GEN_110)
+    dataRegister_10 <= mux(reset, _T_133_10, _GEN_111)
+    dataRegister_11 <= mux(reset, _T_133_11, _GEN_112)
+    dataRegister_12 <= mux(reset, _T_133_12, _GEN_113)
+    dataRegister_13 <= mux(reset, _T_133_13, _GEN_114)
+    dataRegister_14 <= mux(reset, _T_133_14, _GEN_115)
+    dataRegister_15 <= mux(reset, _T_133_15, _GEN_116)
+    dataRegister_16 <= mux(reset, _T_133_16, _GEN_117)
+    dataRegister_17 <= mux(reset, _T_133_17, _GEN_118)
+    dataRegister_18 <= mux(reset, _T_133_18, _GEN_119)
+    dataRegister_19 <= mux(reset, _T_133_19, _GEN_120)
+    dataRegister_20 <= mux(reset, _T_133_20, _GEN_121)
+    dataRegister_21 <= mux(reset, _T_133_21, _GEN_122)
+    dataRegister_22 <= mux(reset, _T_133_22, _GEN_123)
+    dataRegister_23 <= mux(reset, _T_133_23, _GEN_124)
+    dataRegister_24 <= mux(reset, _T_133_24, _GEN_125)
+    dataRegister_25 <= mux(reset, _T_133_25, _GEN_126)
+    dataRegister_26 <= mux(reset, _T_133_26, _GEN_127)
+    dataRegister_27 <= mux(reset, _T_133_27, _GEN_128)
+    dataRegister_28 <= mux(reset, _T_133_28, _GEN_129)
+    dataRegister_29 <= mux(reset, _T_133_29, _GEN_130)
+    dataRegister_30 <= mux(reset, _T_133_30, _GEN_131)
+    dataRegister_31 <= mux(reset, _T_133_31, _GEN_132)
+    bpRegisterInt_0 <= mux(reset, _T_339_0, _GEN_68)
+    bpRegisterExt_0 <= mux(reset, _T_359_0, _GEN_133)

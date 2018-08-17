@@ -1,0 +1,15 @@
+circuit NLU : @[:@2.0]
+  module NLU : @[:@3.2]
+    input clock : Clock @[:@4.4]
+    input reset : UInt<1> @[:@5.4]
+    input io_fSel_reluEnable : UInt<1> @[:@6.4]
+    input io_in : SInt<8> @[:@6.4]
+    output io_out : SInt<8> @[:@6.4]
+  
+    node _T_7 = gt(io_in, asSInt(UInt<1>("h0"))) @[PE.scala 299:26:@13.8]
+    node _GEN_0 = mux(_T_7, io_in, asSInt(UInt<1>("h0"))) @[PE.scala 299:33:@14.8]
+    node _GEN_1 = mux(UInt<1>("h0"), asSInt(UInt<1>("h0")), asSInt(UInt<1>("h0"))) @[PE.scala 307:57:@26.10]
+    node _GEN_2 = mux(UInt<1>("h0"), asSInt(UInt<1>("h0")), _GEN_1) @[PE.scala 304:57:@22.8]
+    node _GEN_3 = mux(io_fSel_reluEnable, _GEN_0, _GEN_2) @[PE.scala 298:57:@12.6]
+    node _GEN_4 = mux(UInt<1>("h0"), io_in, _GEN_3) @[PE.scala 296:48:@8.4]
+    io_out <= _GEN_4

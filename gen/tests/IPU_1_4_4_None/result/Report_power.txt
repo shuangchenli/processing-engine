@@ -1,0 +1,45 @@
+Information: Propagating switching activity (high effort zero delay simulation). (PWR-6)
+Warning: Design has unannotated primary inputs. (PWR-414)
+ 
+****************************************
+Report : power
+        -hier
+        -analysis_effort high
+Design : IPU
+Version: M-2016.12-SP5-4
+Date   : Wed Aug 15 10:20:29 2018
+****************************************
+
+
+Library(s) Used:
+
+    gscl45nm (File: /home/shuangchenli/FreePDK45/osu_soc/lib/files/gscl45nm_wire.db)
+
+
+Operating Conditions: typical   Library: gscl45nm
+Wire Load Model Mode: segmented
+
+Design        Wire Load Model            Library
+------------------------------------------------
+IPU                    5K_hvratio_1_1    gscl45nm
+IPUPMult               5K_hvratio_1_1    gscl45nm
+IPUSumTree             5K_hvratio_1_1    gscl45nm
+
+
+Global Operating Voltage = 1.1  
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000pf
+    Time Units = 1ns
+    Dynamic Power Units = 1mW    (derived from V,C,T units)
+    Leakage Power Units = 1nW
+
+
+--------------------------------------------------------------------------------
+                                       Switch   Int      Leak     Total
+Hierarchy                              Power    Power    Power    Power    %
+--------------------------------------------------------------------------------
+IPU                                    6.57e-03 1.06e-02  485.311 1.77e-02 100.0
+  IPUSumTree (IPUSumTree)              6.26e-04 1.54e-03   79.014 2.25e-03  12.7
+  IPUPMult (IPUPMult)                  5.94e-03 9.06e-03  406.296 1.54e-02  87.3
+1

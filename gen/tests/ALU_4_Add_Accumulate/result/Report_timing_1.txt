@@ -1,0 +1,82 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay min
+        -max_paths 3
+        -sort_by group
+Design : ALU
+Version: M-2016.12-SP5-4
+Date   : Wed Aug 15 10:24:08 2018
+****************************************
+
+Operating Conditions: typical   Library: gscl45nm
+Wire Load Model Mode: segmented
+
+  Startpoint: io_ipu_innerProd[0]
+              (input port)
+  Endpoint: io_out[0] (output port)
+  Path Group: (none)
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  ALU                5K_hvratio_1_1        gscl45nm
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  input external delay                     0.00       0.00 r
+  io_ipu_innerProd[0] (in)                 0.01       0.01 r
+  U45/Y (OAI21X1)                          0.02       0.03 f
+  U46/Y (OAI21X1)                          0.01       0.04 r
+  io_out[0] (out)                          0.00       0.04 r
+  data arrival time                                   0.04
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: io_fSel_addEnable
+              (input port)
+  Endpoint: io_out[3] (output port)
+  Path Group: (none)
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  ALU                5K_hvratio_1_1        gscl45nm
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  input external delay                     0.00       0.00 f
+  io_fSel_addEnable (in)                   0.01       0.01 f
+  U44/Y (INVX1)                            0.03       0.04 r
+  U65/Y (OAI21X1)                          0.02       0.05 f
+  io_out[3] (out)                          0.00       0.05 f
+  data arrival time                                   0.05
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: io_fSel_addEnable
+              (input port)
+  Endpoint: io_out[1] (output port)
+  Path Group: (none)
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  ALU                5K_hvratio_1_1        gscl45nm
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  input external delay                     0.00       0.00 f
+  io_fSel_addEnable (in)                   0.01       0.01 f
+  U44/Y (INVX1)                            0.03       0.04 r
+  U53/Y (OAI21X1)                          0.02       0.05 f
+  io_out[1] (out)                          0.00       0.05 f
+  data arrival time                                   0.05
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+1

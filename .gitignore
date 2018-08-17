@@ -1,6 +1,13 @@
 *.class
 *.log
 *checkpoint.ipynb
-*.v
-*.fir
 *.anno
+gen/**/target
+gen/**/test_run_dir
+gen/**/project/project
+gen/**/project/target
+gen/**/Design_Compiler/result
+gen/**/Design_Compiler/synthesis
+gen/**/Design_Compiler/*.log
+gen/**/results
+gen/**/tests

@@ -1,0 +1,91 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay min
+        -max_paths 3
+        -sort_by group
+Design : RF
+Version: M-2016.12-SP5-4
+Date   : Wed Aug 15 10:23:11 2018
+****************************************
+
+Operating Conditions: typical   Library: gscl45nm
+Wire Load Model Mode: segmented
+
+  Startpoint: bpRegisterExt_0_reg_7_
+              (rising edge-triggered flip-flop)
+  Endpoint: io_rInternal_0[7]
+            (output port)
+  Path Group: (none)
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  RF                 5K_hvratio_1_1        gscl45nm
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  bpRegisterExt_0_reg_7_/CLK (DFFPOSX1)                   0.00       0.00 r
+  bpRegisterExt_0_reg_7_/Q (DFFPOSX1)                     0.07       0.07 r
+  U3618/Y (AOI22X1)                                       0.02       0.08 f
+  U2643/Y (BUFX2)                                         0.03       0.12 f
+  U3641/Y (NAND3X1)                                       0.03       0.14 r
+  U2213/Y (BUFX2)                                         0.03       0.18 r
+  io_rInternal_0[7] (out)                                 0.00       0.18 r
+  data arrival time                                                  0.18
+  --------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: bpRegisterExt_0_reg_6_
+              (rising edge-triggered flip-flop)
+  Endpoint: io_rInternal_0[6]
+            (output port)
+  Path Group: (none)
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  RF                 5K_hvratio_1_1        gscl45nm
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  bpRegisterExt_0_reg_6_/CLK (DFFPOSX1)                   0.00       0.00 r
+  bpRegisterExt_0_reg_6_/Q (DFFPOSX1)                     0.07       0.07 r
+  U3593/Y (AOI22X1)                                       0.02       0.08 f
+  U2638/Y (BUFX2)                                         0.03       0.12 f
+  U3616/Y (NAND3X1)                                       0.03       0.14 r
+  U2212/Y (BUFX2)                                         0.03       0.18 r
+  io_rInternal_0[6] (out)                                 0.00       0.18 r
+  data arrival time                                                  0.18
+  --------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: bpRegisterExt_0_reg_5_
+              (rising edge-triggered flip-flop)
+  Endpoint: io_rInternal_0[5]
+            (output port)
+  Path Group: (none)
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  RF                 5K_hvratio_1_1        gscl45nm
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  bpRegisterExt_0_reg_5_/CLK (DFFPOSX1)                   0.00       0.00 r
+  bpRegisterExt_0_reg_5_/Q (DFFPOSX1)                     0.07       0.07 r
+  U3568/Y (AOI22X1)                                       0.02       0.08 f
+  U2633/Y (BUFX2)                                         0.03       0.12 f
+  U3591/Y (NAND3X1)                                       0.03       0.14 r
+  U2211/Y (BUFX2)                                         0.03       0.18 r
+  io_rInternal_0[5] (out)                                 0.00       0.18 r
+  data arrival time                                                  0.18
+  --------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+1

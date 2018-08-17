@@ -1,0 +1,45 @@
+ 
+****************************************
+Report : area
+Design : IPU
+Version: M-2016.12-SP5-4
+Date   : Wed Aug 15 10:20:29 2018
+****************************************
+
+Library(s) Used:
+
+    gscl45nm (File: /home/shuangchenli/FreePDK45/osu_soc/lib/files/gscl45nm_wire.db)
+
+Number of ports:                           34
+Number of nets:                            64
+Number of cells:                           37
+Number of combinational cells:             35
+Number of sequential cells:                 0
+Number of macros/black boxes:               0
+Number of buf/inv:                         17
+Number of references:                       2
+
+Combinational area:                 95.737199
+Buf/Inv area:                       30.504499
+Noncombinational area:               0.000000
+Macro/Black Box area:                0.000000
+Net Interconnect area:               7.051258
+
+Total cell area:                    95.737199
+Total area:                        102.788457
+
+Hierarchical area distribution
+------------------------------
+
+                                  Global cell area          Local cell area
+                                  ------------------  --------------------------- 
+Hierarchical cell                 Absolute   Percent  Combi-    Noncombi-  Black-
+                                  Total      Total    national  national   boxes   Design
+--------------------------------  ---------  -------  --------  ---------  ------  ----------
+IPU                                 95.7372    100.0    0.0000     0.0000  0.0000  IPU
+IPUPMult                            86.3512     90.2   86.3512     0.0000  0.0000  IPUPMult
+IPUSumTree                           9.3860      9.8    9.3860     0.0000  0.0000  IPUSumTree
+--------------------------------  ---------  -------  --------  ---------  ------  ----------
+Total                                                  95.7372     0.0000  0.0000
+
+1
